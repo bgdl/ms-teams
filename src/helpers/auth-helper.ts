@@ -47,6 +47,7 @@ export default class AuthHelper {
      * an AD token.
      */
     public static StartSignIn(): void {
+        console.log('StartSignIn')
         authenticationContext.clearCache();
         authenticationContext.login();
     }
@@ -84,6 +85,7 @@ export default class AuthHelper {
      */
     private static async getAccessToken(): Promise<string> {
         return new Promise<string>((resolve, reject) => {
+            console.log('getAccessToken URL', window.location.origin)
             msTeams.authentication.authenticate({
                 url: `${window.location.origin}/${constants.Auth.signInStartPage}`,
                 width: 600,

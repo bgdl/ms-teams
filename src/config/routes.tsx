@@ -1,6 +1,7 @@
 import React from 'react';
 import { Home, Configure } from '../pages';
 import { Login, SignInStart, SignInEnd } from '../pages/auth';
+
 import { RouteDefinition } from '../models/route-definition';
 
 const routes: RouteDefinition[] = [
