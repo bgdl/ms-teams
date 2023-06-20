@@ -22,7 +22,6 @@ export default class RouterHelper {
   }
 
   private static RenderRoutes(routes: RouteDefinition[]): JSX.Element {
-    console.log('RenderRoutes', routes)
     return (
       <Router>
         <Switch>

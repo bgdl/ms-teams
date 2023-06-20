@@ -85,7 +85,6 @@ export default class AuthHelper {
      */
     private static async getAccessToken(): Promise<string> {
         return new Promise<string>((resolve, reject) => {
-            console.log('getAccessToken URL', window.location.origin)
             msTeams.authentication.authenticate({
                 url: `${window.location.origin}/${constants.Auth.signInStartPage}`,
                 width: 600,
